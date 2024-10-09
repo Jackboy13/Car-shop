@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Car Shop</div>
+        <button class="toggler" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Car Units</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Honda</a></li>
+                        <li><a href="#">Toyota</a></li>
+                        <li><a href="#">Mitsubishi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="login-btn">Log in</button>
+    </header>
+    
+    <main>
+        <section class="content">
+            <h2>NEW IN STOCK</h2>
+            <h1 class="exclusive">EXCLUSIVE SPORTS CAR</h1>
+            <p><strong>Sports cars advanced features.</strong><br>Sports cars offer advanced features and high-quality materials for a more comfortable driving experience.</p>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="see-more-btn">See more</button>
+            </div>
+        </section>
+        <img src="cars.png" alt="Sports Car" class="car-image">
+    </main>
+
+    <script>
+        const toggler = document.querySelector('.toggler');
+        const nav = document.querySelector('nav');
+
+        toggler.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
